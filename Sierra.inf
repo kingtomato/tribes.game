@@ -1,0 +1,20 @@
+[Ident]
+ProductID=83667
+FullTitle=Starsiege Tribes
+ShortTitle=Tribes
+Version=1.8.0.0
+PatchVersion=1.8.0.0
+StrippedDemo=0
+UpdateAfter=01-01-2000
+WebPage=http://www.tribesplayers.com/tribesplayers/
+
+[Systest]
+ScreenWidth=640
+ScreenHeight=480
+Colors=256
+MemKB=30000
+CPUSpeed=200
+CPUSpeedGL=166
+Winver=95
+Wave=1
+MIDI=0

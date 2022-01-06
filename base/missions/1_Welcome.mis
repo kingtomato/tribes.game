@@ -1,0 +1,225 @@
+//--- export object begin ---//
+instant SimGroup "MissionGroup" {
+	instant SimGroup "Volumes" {
+		instant SimVolume "InterfaceVol" {
+			fileName = "Interface.vol";
+		};
+		instant SimVolume "entities" {
+			fileName = "Entities.vol";
+		};
+		instant SimVolume "World" {
+			fileName = "lushWorld.vol";
+		};
+		instant SimVolume "WorldTerrain" {
+			fileName = "lushTerrain.vol";
+		};
+		instant SimVolume "lushDML" {
+			fileName = "lushDML.vol";
+		};
+		instant SimVolume "savanaDML" {
+			fileName = "savanaDML.vol";
+		};
+		instant SimVolume "human1DML" {
+			fileName = "human1DML.vol";
+		};
+		instant SimVolume "TedFile" {
+			fileName = "1_Welcome.ted";
+		};
+		instant SimVolume "MissionLighting" {
+			fileName = "1_welcome.vol";
+		};
+	};
+	instant SimGroup "World" {
+		instant SimPalette "Palette" {
+			fileName = "lush.day.ppl";
+		};
+		instant MissionCenterPos "MissionCenter" {
+			x = "-150";
+			y = "-250";
+			w = "300";
+			h = "300";
+		};
+	};
+	instant SimGroup "Landscape" {
+		instant Sky "Sky" {
+			dmlName = "litesky.dml";
+			skyColor = "0 0 0";
+			hazeColor = "0 0 0";
+			featurePosition = "0";
+			size = "600";
+			textures[0] = "0";
+			textures[1] = "1";
+			textures[2] = "2";
+			textures[3] = "3";
+			textures[4] = "4";
+			textures[5] = "5";
+			textures[6] = "6";
+			textures[7] = "7";
+			textures[8] = "0";
+			textures[9] = "1";
+			textures[10] = "2";
+			textures[11] = "3";
+			textures[12] = "4";
+			textures[13] = "5";
+			textures[14] = "6";
+			textures[15] = "7";
+			distance = "800";
+		};
+		instant Planet "Sun" {
+			fileName = "lushdaysun.bmp";
+			azimuth = "60";
+			incidence = "35";
+			castShadows = "True";
+			useLensFlare = "True";
+			intensity = "0.79999 0.79999 0.79999";
+			ambient = "0.299989 0.299989 0.299989";
+			size = "1500";
+			distance = "11000";
+		};
+		instant SimTerrain "Terrain" {
+			tedFileName = "1_Welcome.dtf";
+			visibleDistance = "700";
+			hazeDistance = "500";
+			hazeVerticalMin = "1.03844e-38";
+			hazeVerticalMax = "8.62918e-38";
+			perspectiveDistance = "80";
+			screenSize = "60";
+			contGravity = "0 0 -20";
+			contDrag = "0";
+			contHeight = "10000";
+			position = "-3072 -3072 0";
+			rotation = "0 0 0";
+		};
+	};
+	instant SimGroup "Lights";
+	instant SimGroup "Teams" {
+		instant TeamGroup "team0" {
+			instant SimGroup "DropPoints" {
+				instant SimGroup "Start" {
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-12.375 -137.756 100.868";
+						rotation = "0 0 1.68312";
+					};
+				};
+				instant SimGroup "Random" {
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-28.6752 -70.3537 97.7199";
+						rotation = "0 0 -2.69992";
+					};
+				};
+			};
+			instant SimGroup "base" {
+				instant InteriorShape "tank161" {
+					fileName = "tank16.0.dis";
+					isContainer = "1";
+					position = "-18.5641 -138.144 74.8733";
+					rotation = "0 0 0";
+					lightParams = "0 ";
+					locked = "1";
+				};
+				instant InteriorShape "ehoverpost1" {
+					fileName = "ehoverpost.0.dis";
+					isContainer = "1";
+					position = "-58.629 -139.396 89.2314";
+					rotation = "0 -0 -3.63138e-07";
+					lightParams = "0 ";
+				};
+				instant InteriorShape "ehoverpost1" {
+					fileName = "ehoverpost.1.dis";
+					isContainer = "1";
+					position = "-86.3945 -104.944 101.379";
+					rotation = "0 -0 0.0399991";
+					lightParams = "0 ";
+				};
+				instant InteriorShape "ehoverpost1" {
+					fileName = "ehoverpost.2.dis";
+					isContainer = "1";
+					position = "-83.6859 -66.9203 116.542";
+					rotation = "0 0 0";
+					lightParams = "0 ";
+				};
+			};
+		};
+		instant TeamGroup "team1" {
+			instant StaticShape "Generator1" {
+				dataBlock = "Generator";
+				name = "";
+				position = "791.169 -181.034 92.3509";
+				rotation = "0 0 0";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+			};
+			instant simGroup "sensor" {
+            	instant Sensor "SENSOR1" {
+					dataBlock = "PulseSensor";
+					name = "";
+					position = "808.598 -196.227 99.1339";
+					rotation = "0 0 0";
+					destroyable = "True";
+					deleteOnDestroy = "False";
+					shieldStrength = "0.0299999";
+				};
+            };
+		};
+		instant Marker "Map Marker1" {
+			dataBlock = "MapMarker";
+			name = "Control Switch";
+			position = "-16.8632 -28.1502 165.875";
+			rotation = "0 0 0";
+		};
+	};
+	instant InteriorShape "ehoverpost1" {
+		fileName = "ehoverpost.3.dis";
+		isContainer = "1";
+		position = "-16.8883 -28.0926 139.961";
+		rotation = "0 0 0";
+		lightParams = "0 ";
+		locked = "1";
+	};
+	instant StaticShape "Objective" {
+		dataBlock = "TowerSwitch";
+		name = "";
+		position = "-16.8635 -28.1505 155.876";
+		rotation = "0 0 0";
+		destroyable = "False";
+		deleteOnDestroy = "False";
+		rotates = "False";
+		collideable = "False";
+	};
+	instant InteriorShape "ehoverpost1" {
+		fileName = "ehoverpost.4.dis";
+		isContainer = "1";
+		position = "-61.0875 -38.3039 129.715";
+		rotation = "0 0 0";
+		lightParams = "0 ";
+	};
+	instant InteriorShape "catwalkB1" {
+		fileName = "catwalkB.0.dis";
+		isContainer = "1";
+		position = "32.3764 -137.005 86.2899";
+		rotation = "0 0 0";
+		lightParams = "4 2.099999 1 2.099999 1 5.599998 1 5.599998 1 ";
+	};
+	instant InteriorShape "catwalkA1" {
+		fileName = "catwalkA.0.dis";
+		isContainer = "1";
+		position = "56.6391 -79.702 107.88";
+		rotation = "0 0 0";
+		lightParams = "4 1.400000 1 1.400000 1 8.399998 1 8.399998 1 ";
+	};
+	instant InteriorShape "catwalkB1" {
+		fileName = "catwalkB.1.dis";
+		isContainer = "1";
+		position = "28.1723 -22.703 135.397";
+		rotation = "0 0 0";
+		lightParams = "4 2.099999 1 2.099999 1 5.599998 1 5.599998 1 ";
+	};
+};
+//--- export object end ---//
+exec(Training_welcome);
+$cdTrack = 4;
+$cdPlayMode = 1;

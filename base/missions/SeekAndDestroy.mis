@@ -1,0 +1,1255 @@
+//--- export object begin ---//
+instant SimGroup "MissionGroup" {
+	instant SimGroup "Volumes" {
+		instant SimVolume "InterfaceVol" {
+			fileName = "Interface.vol";
+		};
+		instant SimVolume "entities" {
+			fileName = "Entities.vol";
+		};
+		instant SimVolume "World" {
+			fileName = "iceWorld.vol";
+		};
+		instant SimVolume "WorldTerrain" {
+			fileName = "iceTerrain.vol";
+		};
+		instant SimVolume "iceDML" {
+			fileName = "iceDML.vol";
+		};
+		instant SimVolume "savanaDML" {
+			fileName = "savanaDML.vol";
+		};
+		instant SimVolume "human1DML" {
+			fileName = "human1DML.vol";
+		};
+		instant SimVolume "TedFile" {
+			fileName = "SeekAndDestroy.ted";
+		};
+		instant SimVolume "MissionLighting" {
+			fileName = "seekanddestroy.vol";
+		};
+	};
+	instant SimGroup "World" {
+		instant SimPalette "Palette" {
+			fileName = "ice.night.ppl";
+		};
+		instant MissionCenterPos "MissionCenter" {
+			x = "-500";
+			y = "-400";
+			w = "1000";
+			h = "1050";
+		};
+	};
+	instant SimGroup "Landscape" {
+		instant Sky "Sky" {
+			dmlName = "";
+			skyColor = "0 0 0";
+			hazeColor = "0 0 0";
+			featurePosition = "0";
+			size = "800";
+			textures[0] = "0";
+			textures[1] = "1";
+			textures[2] = "0";
+			textures[3] = "1";
+			textures[4] = "0";
+			textures[5] = "1";
+			textures[6] = "0";
+			textures[7] = "1";
+			textures[8] = "0";
+			textures[9] = "1";
+			textures[10] = "0";
+			textures[11] = "1";
+			textures[12] = "0";
+			textures[13] = "1";
+			textures[14] = "0";
+			textures[15] = "1";
+			distance = "1200";
+		};
+		instant Planet "Planets" {
+			fileName = "icetwoplanets.bmp";
+			azimuth = "115";
+			incidence = "43";
+			castShadows = "True";
+			useLensFlare = "False";
+			intensity = "0.439991 0.439991 0.439991";
+			ambient = "0.149995 0.149995 0.149995";
+			size = "100";
+			distance = "1200";
+		};
+		instant SimTerrain "Terrain" {
+			tedFileName = "SeekAndDestroy.dtf";
+			visibleDistance = "600";
+			hazeDistance = "220";
+			hazeVerticalMin = "1.04699e-38";
+			hazeVerticalMax = "1.062e-37";
+			perspectiveDistance = "100";
+			screenSize = "75";
+			contGravity = "0 0 -20";
+			contDrag = "0";
+			contHeight = "10000";
+			position = "-3072 -3072 0";
+			rotation = "0 0 0";
+		};
+		instant StarField "stars1" {
+			inFrontOfSky = "True";
+			colors[0] = "0.599983 0.599983 0.599983";
+			colors[1] = "0.299983 0.299983 0.299983";
+			colors[2] = "0.299983 0.299983 0.299983";
+		};
+	};
+	instant SimGroup "Lights" {
+		instant Marker "Team0 Hallway Marker" {
+			dataBlock = "PathMarker";
+			name = "";
+			position = "-151 359.508 91.2937";
+			rotation = "0 0 0";
+		};
+		instant SimLight "Team0 Hallway Light" {
+			type = "2";
+			range = "6";
+			color = "0.699972 0.199979 0.199979";
+			ambient = "0 0 0";
+			position = "-151 359.506 91.2936";
+			aim = "0.408228 0.288653 -0.866004";
+			isStatic = "True";
+		};
+		instant Marker "Team1 Hallway Marker" {
+			dataBlock = "PathMarker";
+			name = "";
+			position = "206.914 -183.875 96.2909";
+			rotation = "0 0 0";
+		};
+		instant SimLight "Team1 Hallway Light" {
+			type = "2";
+			range = "6";
+			color = "0.5 0.5 0";
+			ambient = "0 0 0";
+			position = "206.912 -183.875 96.2909";
+			aim = "0.408228 0.288653 -0.866004";
+			isStatic = "True";
+		};
+		instant Marker "SW Tower Marker" {
+			dataBlock = "PathMarker";
+			name = "";
+			position = "-327.96 -112.125 83.6385";
+			rotation = "0 0 0";
+		};
+		instant SimLight "SW Tower Light" {
+			type = "2";
+			range = "4";
+			color = "0.59998 0.29998 0";
+			ambient = "0 0 0";
+			position = "-327.96 -112.125 83.6385";
+			aim = "0.408228 0.288653 -0.866004";
+			isStatic = "True";
+		};
+		instant Marker "NE Tower Marker" {
+			dataBlock = "PathMarker";
+			name = "";
+			position = "304.158 256.15 121.157";
+			rotation = "0 0 0";
+		};
+		instant SimLight "NE Tower Light" {
+			type = "2";
+			range = "4";
+			color = "0.59998 0.29998 0";
+			ambient = "0 0 0";
+			position = "304.158 256.15 121.157";
+			aim = "0.408228 0.288653 -0.866004";
+			isStatic = "True";
+		};
+		instant Marker "Repair Pack Marker" {
+			dataBlock = "PathMarker";
+			name = "";
+			position = "30.6917 91.9712 205.566";
+			rotation = "0 0 0";
+		};
+		instant SimLight "Repair Pack Light" {
+			type = "2";
+			range = "7";
+			color = "0.199985 0.799985 0.199985";
+			ambient = "0 0 0";
+			position = "30.6911 91.9706 205.56";
+			aim = "0.408232 0.288656 -0.866013";
+			isStatic = "True";
+		};
+	};
+	instant SimGroup "ObserverDropPoints" {
+		instant Marker "Drop Point1" {
+			dataBlock = "DropPointMarker";
+			name = "";
+			position = "46.8634 92.1769 211.011";
+			rotation = "0 -0 -2.73978";
+		};
+		instant Marker "Drop Point1" {
+			dataBlock = "DropPointMarker";
+			name = "";
+			position = "67.9012 118.384 210.96";
+			rotation = "0 -0 0.639976";
+		};
+		instant Marker "Drop Point1" {
+			dataBlock = "DropPointMarker";
+			name = "";
+			position = "282.61 233.893 102.927";
+			rotation = "0 -0 -0.779976";
+		};
+		instant Marker "Drop Point1" {
+			dataBlock = "DropPointMarker";
+			name = "";
+			position = "-309.391 -26.6173 82.9192";
+			rotation = "0 -0 2.33978";
+		};
+	};
+	instant SimGroup "Teams" {
+		instant TeamGroup "team0" {
+			instant SimGroup "DropPoints" {
+				instant SimGroup "Start" {
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-137.34 357.318 60.2297";
+						rotation = "0 -0 -1.57979";
+					};
+					instant Marker "Drop Point2" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-136.948 353.519 60.2297";
+						rotation = "0 -0 -1.57979";
+					};
+					instant Marker "Drop Point3" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-137 348.908 60.2297";
+						rotation = "0 -0 -1.61975";
+					};
+					instant Marker "Drop Point4" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-137.125 360.973 60.2297";
+						rotation = "0 -0 -1.45979";
+					};
+					instant Marker "Drop Point5" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-137.142 364.676 60.2297";
+						rotation = "0 -0 -1.47979";
+					};
+					instant Marker "Drop Point6" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-137.45 368.826 60.4297";
+						rotation = "0 -0 -1.49975";
+					};
+					instant Marker "Drop Point7" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-136.832 343.964 60.4297";
+						rotation = "0 -0 -1.65978";
+					};
+					instant Marker "Drop Point8" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-136.681 339.283 60.4297";
+						rotation = "0 -0 -1.57979";
+					};
+					instant Marker "Drop Point9" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-137.668 372.875 60.6295";
+						rotation = "0 -0 -1.45979";
+					};
+					instant Marker "Drop Point10" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-137.375 376.375 60.8296";
+						rotation = "0 -0 -1.55979";
+					};
+					instant Marker "Drop Point11" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-137.375 380.055 60.6295";
+						rotation = "0 -0 -1.51977";
+					};
+					instant Marker "Drop Point12" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-124.824 330.65 61.0297";
+						rotation = "0 -0 0.579974";
+					};
+					instant Marker "Drop Point13" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-124.799 389.125 61.4297";
+						rotation = "0 -0 2.59978";
+					};
+					instant Marker "Drop Point14" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-124.675 375.055 60.8296";
+						rotation = "0 -0 1.53978";
+					};
+					instant Marker "Drop Point15" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-123.631 345.886 60.4297";
+						rotation = "0 -0 1.59979";
+					};
+					instant Marker "Drop Point16" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-125.085 358.658 60.6295";
+						rotation = "0 -0 1.55979";
+					};
+				};
+				instant SimGroup "Random" {
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-150.375 381.262 87.0297";
+						rotation = "0 -0 -1.55978";
+					};
+					instant Marker "Drop Point2" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-150.317 338.214 87.0296";
+						rotation = "0 -0 -1.59979";
+					};
+					instant Marker "Drop Point3" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-133.784 345.417 99.4297";
+						rotation = "0 -0 -1.63976";
+					};
+					instant Marker "Drop Point4" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-130.75 367.439 99.2293";
+						rotation = "0 -0 1.49975";
+					};
+					instant Marker "Drop Point5" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-155.263 352.503 70.2293";
+						rotation = "0 -0 -0.779961";
+					};
+					instant Marker "Drop Point6" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-155.024 368.144 70.0297";
+						rotation = "0 -0 -2.41978";
+					};
+					instant Marker "Drop Point7" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-143 352.551 69.8297";
+						rotation = "0 -0 1.43979";
+					};
+					instant Marker "Drop Point8" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-142.265 366.206 69.6295";
+						rotation = "0 -0 1.59979";
+					};
+				};
+			};
+			instant SimGroup "base" {
+				instant SimGroup "Interiors" {
+					instant InteriorShape "base71" {
+						fileName = "base7.0.dis";
+						isContainer = "1";
+						position = "-136 360 46.2298";
+						rotation = "0 -0 1.57058";
+						lightParams = "0 ";
+						locked = "1";
+					};
+					instant Marker "Map Marker1" {
+						dataBlock = "MapMarker";
+						name = "<vServer::teamName0> base";
+						position = "-136 360 46";
+						rotation = "0 0 0";
+					};
+					instant InteriorShape "BESfloatingpad1" {
+						fileName = "BESfloatingPad.0.dis";
+						isContainer = "1";
+						position = "-128.595 356.5 96.2293";
+						rotation = "0 0 0";
+						lightParams = "9 0.700000 1 0.700000 1 0.700000 1 0.700000 1 0.700000 1 0.700000 1 0.700000 1 0.700000 1 0.700000 1 ";
+						locked = "1";
+					};
+				};
+				instant SimGroup "Powered Stuff" {
+					instant Sensor "MedPulse1" {
+						dataBlock = "MediumPulseSensor";
+						name = "Main Pulse Sensor";
+						position = "-128.886 356.46 96.2293";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						objectiveLine = "13";
+						shieldStrength = "0.0299999";
+						scoreValue = "3";
+						objectiveName = "Main Pulse Sensor";
+						lastDamageObject = "2049";
+						lastDamageTeam = "0";
+					};
+					instant StaticShape "Generator1" {
+						dataBlock = "Generator";
+						name = "Main Generator";
+						position = "-113.879 360.128 84.7293";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						objectiveLine = "16";
+						scoreValue = "5";
+						objectiveName = "Main Generator";
+					};
+					instant StaticShape "portgen1" {
+						dataBlock = "PortGenerator";
+						name = "Small Generator #1";
+						position = "-126.25 386.279 76.2293";
+						rotation = "0 -0 1.53977";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						objectiveLine = "14";
+						scoreValue = "4";
+						objectiveName = "Small Generator #1";
+					};
+					instant StaticShape "portgen1" {
+						dataBlock = "PortGenerator";
+						name = "Small Generator #2";
+						position = "-128.004 333.917 76.2293";
+						rotation = "0 -0 -1.59973";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						objectiveLine = "15";
+						scoreValue = "4";
+						objectiveName = "Small Generator #2";
+					};
+					instant StaticShape "AmmoStation1" {
+						dataBlock = "AmmoStation";
+						name = "Base Ammo #1";
+						position = "-136.353 372.503 82.2293";
+						rotation = "0 -0 0.839975";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+					instant StaticShape "AmmoStation1" {
+						dataBlock = "AmmoStation";
+						name = "Base Ammo #2";
+						position = "-119.128 349.383 69.2293";
+						rotation = "0 -0 -1.57972";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+					instant StaticShape "InventoryStation1" {
+						dataBlock = "InventoryStation";
+						name = "Base Inventory #1";
+						position = "-125.75 367.25 58.2297";
+						rotation = "0 -0 -1.55978";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+					instant StaticShape "InventoryStation1" {
+						dataBlock = "InventoryStation";
+						name = "Base Inventory #2";
+						position = "-120.578 370.145 69.2293";
+						rotation = "0 -0 -1.56979";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+					instant StaticShape "InventoryStation1" {
+						dataBlock = "InventoryStation";
+						name = "Base Inventory #3";
+						position = "-135.541 348.459 82.2293";
+						rotation = "0 -0 2.41978";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+					instant StaticShape "InventoryStation1" {
+						dataBlock = "InventoryStation";
+						name = "Base Inventory #4";
+						position = "-125.339 352.568 58.2297";
+						rotation = "0 -0 -1.55977";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+					instant StaticShape "CommandStation1" {
+						dataBlock = "CommandStation";
+						name = "Command Station";
+						position = "-158.334 360.125 67.2293";
+						rotation = "0 -0 1.56971";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+					instant Turret "IndoorTurret1" {
+						dataBlock = "IndoorTurret";
+						name = "Entrance Turret 1";
+						position = "-107.966 335.318 65.2274";
+						rotation = "0 -1.56971 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						shieldStrength = "0.0299999";
+					};
+					instant Turret "IndoorTurret1" {
+						dataBlock = "IndoorTurret";
+						name = "Entrance Turret 2";
+						position = "-107.976 383.65 64.7087";
+						rotation = "3.13979 -1.56977 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						shieldStrength = "0.0299999";
+					};
+					instant Turret "IndoorTurret1" {
+						dataBlock = "IndoorTurret";
+						name = "Gen Indoor Turret";
+						position = "-139.125 359.753 84.2293";
+						rotation = "0 -0 -1.55978";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						shieldStrength = "0.0299999";
+					};
+					instant Turret "ELFTurret1" {
+						dataBlock = "ELFTurret";
+						name = "Elf Turret #1";
+						position = "-161.407 360.145 76.2298";
+						rotation = "0 -0 1.57998";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						shieldStrength = "0.0299999";
+					};
+					instant Turret "ELFTurret1" {
+						dataBlock = "ELFTurret";
+						name = "ELF Turret #2";
+						position = "-162.816 359.878 88.2298";
+						rotation = "0 -0 1.58123";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						shieldStrength = "0.0299999";
+					};
+					instant Turret "PlasmaTurret1" {
+						dataBlock = "PlasmaTurret";
+						name = "Plasma Turret";
+						position = "-110.5 360.96 96.4297";
+						rotation = "0 -0 -1.55978";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						shieldStrength = "0.0299999";
+					};
+					instant Turret "RocketTurret1" {
+						dataBlock = "RocketTurret";
+						name = "Rocket Turret";
+						position = "-129.25 356.5 114.311";
+						rotation = "0 -0 3.10294";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						shieldStrength = "0.0299999";
+					};
+
+					instant StaticShape "AntennaMed1" {
+						dataBlock = "MediumAntenna";
+						name = "";
+						position = "-157.274 387.95 96.2293";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+					instant StaticShape "AntennaArray1" {
+						dataBlock = "ArrayAntenna";
+						name = "";
+						position = "-157.752 330.344 96.2293";
+						rotation = "0 -0 -1.57978";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+				};
+				instant SimGroup "Items" {
+					instant Item "RepairKit1" {
+						dataBlock = "RepairKit";
+						name = "";
+						position = "-118.599 382.477 84.2293";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						rotates = "True";
+						collideable = "False";
+						count = "1";
+					};
+					instant Item "RepairKit1" {
+						dataBlock = "RepairKit";
+						name = "";
+						position = "-119.171 337.934 84.2293";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						rotates = "True";
+						collideable = "False";
+						count = "1";
+					};
+					instant Item "RepairPatch1" {
+						dataBlock = "RepairPatch";
+						name = "";
+						position = "-119.043 336.006 84.2293";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						rotates = "True";
+						collideable = "False";
+						count = "1";
+					};
+					instant Item "RepairPatch1" {
+						dataBlock = "RepairPatch";
+						name = "";
+						position = "-119.035 339.881 84.2293";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						rotates = "True";
+						collideable = "False";
+						count = "1";
+					};
+					instant Item "RepairPatch1" {
+						dataBlock = "RepairPatch";
+						name = "";
+						position = "-118.5 384.387 84.2293";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						rotates = "True";
+						collideable = "False";
+						count = "1";
+					};
+					instant Item "RepairPatch1" {
+						dataBlock = "RepairPatch";
+						name = "";
+						position = "-118.5 380.55 84.2293";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						rotates = "True";
+						collideable = "False";
+						count = "1";
+					};
+				};
+			};
+		};
+		instant TeamGroup "team1" {
+			instant SimGroup "DropPoints" {
+				instant SimGroup "Start" {
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "193.328 -186.194 66.9858";
+						rotation = "0 -0 1.57979";
+					};
+					instant Marker "Drop Point2" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "193.42 -189.709 67.1875";
+						rotation = "0 -0 1.59979";
+					};
+					instant Marker "Drop Point3" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "193.772 -193.17 67.3858";
+						rotation = "0 -0 1.61975";
+					};
+					instant Marker "Drop Point4" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "193.338 -182.25 66.7858";
+						rotation = "0 -0 1.55979";
+					};
+					instant Marker "Drop Point5" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "193.412 -177.312 66.9858";
+						rotation = "0 -0 1.53978";
+					};
+					instant Marker "Drop Point6" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "193.338 -173.321 66.9858";
+						rotation = "0 -0 1.51977";
+					};
+					instant Marker "Drop Point7" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "193.297 -168.832 66.9858";
+						rotation = "0 -0 1.47979";
+					};
+					instant Marker "Drop Point8" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "193.897 -196.922 67.1875";
+						rotation = "0 -0 1.53978";
+					};
+					instant Marker "Drop Point9" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "193.974 -200.25 67.1875";
+						rotation = "0 -0 1.57979";
+					};
+					instant Marker "Drop Point10" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "193.317 -163.853 66.7858";
+						rotation = "0 -0 1.53978";
+					};
+					instant Marker "Drop Point11" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "194.009 -205.06 66.9858";
+						rotation = "0 -0 1.55979";
+					};
+					instant Marker "Drop Point12" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "180.808 -213.037 66.7858";
+						rotation = "0 -0 -0.859975";
+					};
+					instant Marker "Drop Point13" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "180.437 -154.353 67.1875";
+						rotation = "0 -0 -2.41978";
+					};
+					instant Marker "Drop Point14" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "181.554 -168.272 66.5856";
+						rotation = "0 -0 -1.57979";
+					};
+					instant Marker "Drop Point15" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "181.284 -197.174 66.7858";
+						rotation = "0 -0 -1.59979";
+					};
+					instant Marker "Drop Point16" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "181.562 -183.207 66.5856";
+						rotation = "0 -0 -1.55979";
+					};
+				};
+				instant SimGroup "Random" {
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "211.625 -175.077 76.1875";
+						rotation = "0 -0 2.29974";
+					};
+					instant Marker "Drop Point2" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "211.601 -193.19 76.1875";
+						rotation = "0 -0 0.599975";
+					};
+					instant Marker "Drop Point3" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "206.267 -161.937 92.9857";
+						rotation = "0 -0 1.61975";
+					};
+					instant Marker "Drop Point4" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "207.166 -206.274 91.7853";
+						rotation = "0 -0 1.61975";
+					};
+					instant Marker "Drop Point5" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "199.25 -176 75.7853";
+						rotation = "0 -0 -2.19977";
+					};
+					instant Marker "Drop Point6" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "199.211 -191.261 76.5856";
+						rotation = "0 -0 -0.819973";
+					};
+					instant Marker "Drop Point7" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "188.442 -195.08 103.966";
+						rotation = "0 -0 -1.47974";
+					};
+					instant Marker "Drop Point8" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "194.261 -173.347 105.766";
+						rotation = "0 -0 1.63976";
+					};
+				};
+			};
+			instant SimGroup "base" {
+				instant SimGroup "Interiors" {
+					instant InteriorShape "base71" {
+						fileName = "base7.1.dis";
+						isContainer = "1";
+						position = "192 -184 51.3859";
+						rotation = "0 -0 -1.57059";
+						lightParams = "0 ";
+						locked = "1";
+					};
+					instant Marker "Map Marker1" {
+						dataBlock = "MapMarker";
+						name = "<vServer::teamName1> base";
+						position = "192 -184 51";
+						rotation = "0 0 0";
+					};
+					instant InteriorShape "DSSfloatingpad1" {
+						fileName = "DSSfloatingPad.0.dis";
+						isContainer = "1";
+						position = "188.317 -184.952 101.375";
+						rotation = "0 0 0";
+						lightParams = "9 0.700000 1 0.700000 1 0.700000 1 0.700000 1 0.700000 1 0.700000 1 0.700000 1 0.700000 1 0.700000 1 ";
+						locked = "1";
+					};
+				};
+				instant SimGroup "Items" {
+					instant Item "RepairPatch1" {
+						dataBlock = "RepairPatch";
+						name = "";
+						position = "175.502 -208.3 89.3859";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						rotates = "True";
+						collideable = "False";
+						count = "1";
+					};
+					instant Item "RepairPatch1" {
+						dataBlock = "RepairPatch";
+						name = "";
+						position = "175.595 -203.521 89.3859";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						rotates = "True";
+						collideable = "False";
+						count = "1";
+					};
+					instant Item "RepairKit1" {
+						dataBlock = "RepairKit";
+						name = "";
+						position = "175.601 -205.955 89.3859";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						rotates = "True";
+						collideable = "False";
+						count = "1";
+					};
+					instant Item "RepairPatch1" {
+						dataBlock = "RepairPatch";
+						name = "";
+						position = "175.004 -163.95 89.3859";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						rotates = "True";
+						collideable = "False";
+						count = "1";
+					};
+					instant Item "RepairPatch1" {
+						dataBlock = "RepairPatch";
+						name = "";
+						position = "175.125 -159.97 89.3859";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						rotates = "True";
+						collideable = "False";
+						count = "1";
+					};
+					instant Item "RepairKit1" {
+						dataBlock = "RepairKit";
+						name = "";
+						position = "175.25 -161.918 89.3859";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						rotates = "True";
+						collideable = "False";
+						count = "1";
+					};
+				};
+				instant SimGroup "Powered Stuff" {
+					instant StaticShape "Generator1" {
+						dataBlock = "Generator";
+						name = "Main Generator";
+						position = "170.25 -184.375 89.8857";
+						rotation = "0 -0 3.13976";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						objectiveLine = "17";
+						objectiveName = "Main Generator";
+						scoreValue = "5";
+					};
+					instant StaticShape "portgen1" {
+						dataBlock = "PortGenerator";
+						name = "Small Generator #1";
+						position = "183.75 -158.181 81.3858";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						objectiveLine = "18";
+						objectiveName = "Small Generator #1";
+						scoreValue = "4";
+					};
+					instant StaticShape "portgen1" {
+						dataBlock = "PortGenerator";
+						name = "Small Generator #2";
+						position = "181.694 -209.802 81.3858";
+						rotation = "0 -0 3.13977";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						objectiveLine = "19";
+						objectiveName = "Small Generator #2";
+						scoreValue = "4";
+					};
+					instant StaticShape "AmmoStation1" {
+						dataBlock = "AmmoStation";
+						name = "Base Ammo #1";
+						position = "192.625 -171.405 87.3859";
+						rotation = "0 -0 -0.739975";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+					instant StaticShape "AmmoStation1" {
+						dataBlock = "AmmoStation";
+						name = "Base Ammo #2";
+						position = "175.006 -194.218 74.3858";
+						rotation = "0 -0 1.63976";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+					instant StaticShape "InventoryStation1" {
+						dataBlock = "InventoryStation";
+						name = "Base Inventory #1";
+						position = "175.703 -173.125 74.3858";
+						rotation = "0 -0 1.63976";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+					instant StaticShape "InventoryStation1" {
+						dataBlock = "InventoryStation";
+						name = "Base Inventory #2";
+						position = "191.093 -195.461 87.3859";
+						rotation = "0 -0 -2.37978";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+					instant StaticShape "InventoryStation1" {
+						dataBlock = "InventoryStation";
+						name = "Base Inventory #3";
+						position = "181.302 -189.5 63.3855";
+						rotation = "0 -0 1.59973";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+					instant StaticShape "InventoryStation1" {
+						dataBlock = "InventoryStation";
+						name = "Base Inventory #4";
+						position = "181.317 -177.422 63.3855";
+						rotation = "0 -0 1.57047";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+					instant Turret "RocketTurret1" {
+						dataBlock = "RocketTurret";
+						name = "Rocket Turret";
+						position = "188.282 -184.675 119.466";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						shieldStrength = "0.0299999";
+					};
+					instant Turret "IndoorTurret1" {
+						dataBlock = "IndoorTurret";
+						name = "Entrance Turret #1";
+						position = "164 -208.448 70.4382";
+						rotation = "0 1.57033 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						shieldStrength = "0.0299999";
+					};
+					instant Turret "IndoorTurret1" {
+						dataBlock = "IndoorTurret";
+						name = "Entrance Turret #2";
+						position = "164 -159.418 70.1743";
+						rotation = "3.14121 1.57041 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						shieldStrength = "0.0299999";
+					};
+					instant Turret "IndoorTurret1" {
+						dataBlock = "IndoorTurret";
+						name = "Gen Indoor Turret";
+						position = "194.687 -184.05 89.4055";
+						rotation = "0 -0 1.55971";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						shieldStrength = "0.0299999";
+					};
+					instant Turret "ELFTurret1" {
+						dataBlock = "ELFTurret";
+						name = "Elf Turret #1";
+						position = "217.013 -184.192 81.3859";
+						rotation = "0 -0 -1.56195";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						shieldStrength = "0.0299999";
+					};
+					instant Turret "ELFTurret1" {
+						dataBlock = "ELFTurret";
+						name = "ELF Turret #2";
+						position = "217.819 -183.559 93.3859";
+						rotation = "0 -0 -1.51999";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						shieldStrength = "0.0299999";
+					};
+					instant Turret "PlasmaTurret1" {
+						dataBlock = "PlasmaTurret";
+						name = "Base Plasma Turret";
+						position = "165.323 -182.47 101.375";
+						rotation = "0 -0 1.57049";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						shieldStrength = "0.0299999";
+					};
+					instant StaticShape "CommandStation1" {
+						dataBlock = "CommandStation";
+						name = "Command Station";
+						position = "214.25 -183.933 72.3858";
+						rotation = "0 -0 -1.57041";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+					instant Sensor "MedPulse1" {
+						dataBlock = "MediumPulseSensor";
+						name = "Main Pulse Sensor";
+						position = "188.5 -185.185 101.375";
+						rotation = "0 -0 1.55978";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+						objectiveLine = "20";
+						lastDamageTeam = "-1";
+						lastDamageObject = "0";
+						objectiveName = "Main Pulse Sensor";
+						scoreValue = "3";
+						shieldStrength = "0.0299999";
+					};
+					instant StaticShape "AntennaArray1" {
+						dataBlock = "ArrayAntenna";
+						name = "";
+						position = "169.828 -155.099 101.375";
+						rotation = "0 -0 1.53978";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+					instant StaticShape "AntennaMed1" {
+						dataBlock = "MediumAntenna";
+						name = "";
+						position = "170.625 -213.845 101.375";
+						rotation = "0 0 0";
+						destroyable = "True";
+						deleteOnDestroy = "False";
+					};
+				};
+			};
+		};
+	};
+	instant SimGroup "Tower1" {
+		instant InteriorShape "BETower21" {
+			fileName = "BETower2.0.dis";
+			isContainer = "1";
+			position = "-328 -112 58.6402";
+			rotation = "0 -0 2.35592";
+			lightParams = "12 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 ";
+			locked = "1";
+		};
+		instant Marker "Map Marker1" {
+			dataBlock = "MapMarker";
+			name = "SW Tower";
+			position = "-328 -112 58";
+			rotation = "0 0 0";
+		};
+		instant StaticShape "Switch1" {
+			dataBlock = "TowerSwitch";
+			name = "SW Tower Switch";
+			position = "-328.711 -112.755 58.7456";
+			rotation = "0 -0 2.30975";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+			objectiveLine = "21";
+			objectiveName = "Southwest Tower";
+			scoreValue = "1";
+		};
+		instant Turret "IndoorTurret1" {
+			dataBlock = "IndoorTurret";
+			name = "SW Indoor Turret";
+			position = "-330.075 -114.125 65.6403";
+			rotation = "0 -0 -2.12295";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+			shieldStrength = "0.0299999";
+		};
+		instant StaticShape "InventoryStation1" {
+			dataBlock = "InventoryStation";
+			name = "SW Inventory #1";
+			position = "-326 -109.652 65.6403";
+			rotation = "0 -0 -0.799975";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "portgen1" {
+			dataBlock = "PortGenerator";
+			name = "SW Generator";
+			position = "-346.75 -99.3319 9.85936";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant Sensor "MedPulse1" {
+			dataBlock = "MediumPulseSensor";
+			name = "SW Pulse Sensor";
+			position = "-327.75 -112.049 102.635";
+			rotation = "0 -0 0.779975";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+			shieldStrength = "0.0299999";
+		};
+		instant InteriorShape "SWSfloatingpad21" {
+			fileName = "swsfloatingpad2.0.dis";
+			isContainer = "1";
+			position = "-342.727 -126.821 63.9892";
+			rotation = "0 -0 0.785375";
+			lightParams = "9 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 ";
+			locked = "1";
+		};
+		instant StaticShape "VehicleStation1" {
+			dataBlock = "VehicleStation";
+			name = "SW Vehicle Station";
+			position = "-332.412 -111.916 81.6404";
+			rotation = "0 -0 1.53978";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+			vehiclePad = "3191";
+		};
+		instant StaticShape "vehiclePad1" {
+			dataBlock = "vehiclePad";
+			name = "SW Vehicle Pad";
+			position = "-342.822 -126.838 79.9887";
+			rotation = "0 -0 2.32292";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+	};
+	instant SimGroup "Tower2" {
+		instant InteriorShape "BETower21" {
+			fileName = "BETower2.1.dis";
+			isContainer = "1";
+			position = "304 256 95.1941";
+			rotation = "0 -0 -0.785378";
+			lightParams = "12 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 ";
+			locked = "1";
+		};
+		instant Marker "Map Marker1" {
+			dataBlock = "MapMarker";
+			name = "NE Tower";
+			position = "304 256 95";
+			rotation = "0 0 0";
+		};
+		instant StaticShape "Switch1" {
+			dataBlock = "TowerSwitch";
+			name = "NE Tower Switch";
+			position = "304.601 256.61 95.3089";
+			rotation = "0 -0 -0.779975";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+			objectiveLine = "22";
+			objectiveName = "Northeast Tower";
+			scoreValue = "1";
+		};
+		instant StaticShape "portgen1" {
+			dataBlock = "PortGenerator";
+			name = "NE Generator";
+			position = "251.89 331.275 42.9672";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "InventoryStation1" {
+			dataBlock = "InventoryStation";
+			name = "NE Inventory #1";
+			position = "301.533 253.812 102.171";
+			rotation = "0 -0 2.37978";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant Turret "IndoorTurret1" {
+			dataBlock = "IndoorTurret";
+			name = "NE Indoor Turret";
+			position = "306.125 258.18 102.171";
+			rotation = "0 -0 2.33977";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+			shieldStrength = "0.0299999";
+		};
+		instant Sensor "MedPulse1" {
+			dataBlock = "MediumPulseSensor";
+			name = "NE Pulse Sensor";
+			position = "303.924 256.133 139.175";
+			rotation = "0 -0 -0.779975";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+			shieldStrength = "0.0299999";
+		};
+		instant InteriorShape "SWSfloatingpad21" {
+			fileName = "swsfloatingpad2.1.dis";
+			isContainer = "1";
+			position = "318.375 268.602 100.32";
+			rotation = "0 -0 0.785378";
+			lightParams = "9 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 ";
+			locked = "1";
+		};
+		instant StaticShape "VehicleStation1" {
+			dataBlock = "VehicleStation";
+			name = "NE Vehicle Station";
+			position = "304.008 260.391 118.171";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+			vehiclePad = "3243";
+		};
+		instant StaticShape "vehiclePad1" {
+			dataBlock = "vehiclePad";
+			name = "NE Vehicle Pad";
+			position = "318.5 268.625 116.32";
+			rotation = "0 -0 -0.779975";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+	};
+	instant Item "RepairPack1" {
+		dataBlock = "RepairPack";
+		name = "";
+		position = "30.6917 91.9712 203.766";
+		rotation = "0 0 0";
+		destroyable = "True";
+		deleteOnDestroy = "False";
+		rotates = "True";
+		collideable = "False";
+		count = "1";
+	};
+};
+//--- export object end ---//
+$teamScoreLimit = 16;
+exec(objectives);
+$Game::missionType = "D&D";
+$cdTrack = 8;
+$cdPlayMode = 1;
