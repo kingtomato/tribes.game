@@ -1,0 +1,444 @@
+
+Starsiege TRIBES Release Notes
+-------------------------------
+
+Please be sure and read the Readme file accompanying this release.
+This file contains notes for all the releases up to this point, but
+the Readme file will contains more information about installing
+and configuring the current release.
+
+Version 1.11
+------------
+
+- Added server model authentication to fix the following cheats:
+	* terrain haze/sky reload cheats
+	* additional lights cheat
+	* beacon cheat
+	* replaced model cheat (e.g. "happy flags")
+
+
+Version 1.105
+-------------
+
+- Fixed a turret-related bug/cheat issue.
+
+
+Version 1.10
+------------
+
+- Fixed a health kit bug/cheat issue.
+- Fixed armor/damage level bug.
+- Fixed a server crash bug issue.
+- Fixed OpenGL "black bug" with new maps.
+
+
+Version 1.9
+-----------
+
+- The health bar is now updated correctly when you change armors.
+- A server crash related to destroying elevators (usually with mines)
+  has been fixed.
+
+
+Version 1.8
+-----------
+
+- Fixed a problem with single TMU 3dFX cards that was causing
+  terrains and interiors to display incorrectly.
+
+
+Version 1.7
+-----------
+
+- You can no longer throw grenades & mines if you are not controlling
+  either your player object or a vehicle.
+- Fixed a bug where mines and grenades that exploded while the player
+  was not in control of his body would have an invalid team number.
+- Players can no longer activate any station if their primary weapon is
+  in it's fire or reload state.
+- Player weapon is unmounted for all active stations (was left
+  mounted for permanent ammo stations in 1.6)
+- Fixed a bug with palette management introduced in 1.6
+- Typing unclosed single quotes in the console no longer crashes.
+- Turret::verifyTarget now has two arguments (%this,%target)
+- GameBase::getMuzzleTransform() should now work correctly with turrets.
+- There is now a 2 sec. timeout after using a station in which you can
+  not throw mines & grenades.
+- A few fixes were added to the 1.6 fix list (the first three had been
+  left out)
+- Player now throws his weapon more often when killed with trigger down.
+- Fliers can no longer hover up through cielings or the bottom of bases.
+- Deployables objects now check against interior and terrain when being
+  displaced by a moveable objects (doors & elevators)
+- Displacement code (elavators & doors) now uses a stepping collision
+  test when testing a displaced object for collision.
+- A server side getLOSInfo method was added for bot authors.
+
+
+Version 1.6
+-----------
+
+- Fixed problem with "DirectX 5 not installed" message using DirectX 6.
+- IRC bitmap escape sequences are now disabled.
+- The Find and Retrieve misison type now has a flag timeout.  When a
+  player grabs an enemy flag, he/she must plant the flag on a home
+  pedestal within 180 seconds or it returns to its initial position.
+-
+- Graphics engine modification to facilitate running OpenGL.
+- "Elevator crash bug" fixed.
+- Player can no longer use weapons at an inventory stations.
+- 3dFX cards will no longer run in OpenGL mode, only in Glide mode.
+
+
+Version 1.5
+-----------
+
+- Server security bug involving the server menu has been fixed (1.4.1)
+- Loading multiple players onto a single vehicle slot is no longer possible.
+- Fixed a problem with inventory stations not clearing the active user.
+- NT 4.0 DDHelp crash fixed.
+- A timedemo function was added to playback a demo calculate average framerate.
+- Fixed a problem with a containment test which would allow players to jump
+  from vehicles into the solid region of an interior.
+- Fixed a problem with gun retraction against vertical surface which would
+  allow players to shoot grenades & mortars through ceilings.
+
+
+Version 1.4
+-----------
+
+Client & Server Changes:
+
+- Server admins can no longer kick themselves, this was causing a server
+  crash.
+- Team skinning will now test all bitmaps with the team prefix, as opposed
+  to only skinning bitmaps that start with "base.".
+- There is now a "generic" OpenGL driver option.
+- The server now verifies the client terrain every 30 secs.
+- You now recieve "Your team's flag was captured" messages.
+- The player is now killed on disconnect (lost connection, or kicked). This
+  fixes several cleanup issues.
+- The server "reset on last client" now resets to the next mission instead
+  of always reloading the first mission.
+- ELF gun cost reduced from 500 to 125.
+- Players can no longer access an inventory station or drop a weapon while
+  they are fireing or reloading.
+- A new player console function was added Player::getItemState(imageSlot);
+- Client side crash bug related to players going out of scope after
+  dropping items.
+- In 1.3, the out of memory dialog box was no longer setting TRIBES into
+  window mode.
+- Rendering performance was inproved on the Join Server screen (could get
+  some bad refresh lags)
+- Performance improvements for nVidia TNT cards.
+- OpenGL & 32 bit desktops. If your graphics card supports 32 bit
+  rendering, then the TRIBES will now run 32 bit accelerated, otherwise
+  the software OpenGL driver is run, which is extremely slow.
+- A crash bug related to having shadows turned on while using the Glide
+  drivers has been fixed.  This was a bug introdiced in version 1.3.
+- Staying connected to IRC while playing the game could cause the client
+  to crash.
+- Banning problems introduced in version 1.3 have been fixed.
+- A server side crash related to players dropping items then quitting has
+  been fixed.
+- The remoteBuyItem() function now properly checks for team item limits.
+- OpenGL is now enabled by default, you no longer have to set the
+  $OpenGL::Enabled variable.
+- When clients are missing files loaded by the server, an error
+- If a client is missing custom files (or missions) loaded by the server,
+  a "missing file" error message now appears during the loading process.
+- Clients now get a "connecting to modified server" notice when connecting
+  to servers which have mods loaded.  Mod or server operators may set an
+  optional string ($MODInfo) that is appended to the notice.
+
+Mission Editor Changes:
+
+- New mission wizard for creating new missions
+- Ability to scene light the current mission from within the editor
+- Ability to move and edit mission static lights
+- Random terrain generation from within the editor
+- User configurable terrain, mission and world types for use in the
+  mission wizard
+- Script based landscape generation
+- Ability to choose and place terrain textures
+- Auto regeneration of command map after leaving editor
+- Hotkey support for terrain editor
+- Ability to add custom volumes from within the editor
+- Ability to create new terrain types through scripts 
+- Can create a mission or enter the mission editor from the command line
+
+
+Version 1.3
+-----------
+
+- No longer link directly to the Windows OpenGL library.  The GLU32 DLL
+  is no longer required.
+- You no longer lose player break keys when switching gui screens, which
+  includes going to the commander map, mission changes, etc.  This was
+  a problem introduced in 1.2
+- The remote deployed turret vertical interference range was increased
+  from 10m to 25m.  Play tested the 10m change in the last patch and that
+  turned out to be a too short.
+- Credit for kills made by remote turrets has been temporarily removed.
+  This was introduced in the last patch, but a number of issues came up
+  which will take time some to resolve.
+- IRC Client no longer crashes when it receives NOTICE messages in an
+  unexpected format.
+- A clients side badword filter has been added.  Any words included in
+  the badword string (located in the config\badword.cs file) will be
+  replaced with a series of asterisk (*).
+- Committing suicide while waiting for a tournament to start, then
+  switching in and out of map mode will no longer re-spawn an active
+  player.
+- Commander map, selecting a command target from either the static 
+  object or turret list, now works correctly.
+- If you start tribes using +connect, when you disconnect from a server
+  the game will exit (for use with tools like GameSpy).
+- Cursor problems when running tribes with +host have been resolved.
+- A hole plugged in siege mission buildings.
+- Light female and male armors were adjusted to keep them from shooting
+  through walls while crouched.
+- Pref::PlayerFOV can now be set to change the client's first person FOV.
+- OpenGL driver
+- Team scores now show up correctly on score menu while in observer mode.
+- The windows Power Management message is now correctly trapped. This
+  was causing problems with machines that had power management features.
+- The server menu ban feature has been remove for voted admins, but is
+  still available for Super Admins.
+- Banning someone from the menu now works correctly.
+- Several problems with the shell's "dirty rectangle" refreshing were
+  fixed, which should speed up several of the shell screens.
+- Memory management has changed slightly to help reduce the amount of
+  swap space being used by the client.
+- Clients in observer mode can now use to the server menu to select the
+  person they wish to observe.
+- Fixed a problem with the shield hit calculation which would cause
+  server sqrt domain errors.
+- The Join Server List now stores off game type between sessions. This
+  allows filters based on game type to work when the client is first
+  started without having to refresh the servers.
+
+
+Version 1.2
+-----------
+
+Client Changes
+
+- Sending in-game private messages from the IRC no longer repeats the
+  first message sent.
+- No longer have to scroll to the top of the Join Screen to select
+  a sort column.
+- In the join server list, you must now double click on a server to
+  re-ping it.
+- The Join Server screen now has a "buddy" search field. Servers that
+  contain players who's names match the contents of the field will have
+  a double eye icon in the favorites column.  The buddy drop-down
+  keeps the last 10 search strings.  Selecting a string out of the drop
+  down brings the selection to the top of the list.
+- Join Server now has "refresh all" and "refresh vis" buttons, refresh
+  all refresh the server list from the master server.  Refresh vis will
+  only query the servers currently listed in the server list.
+- Pinging a server in the Join Server list by selecting it no longer
+  re-sorts or re-filters the list.
+- The voice menu will now appear above or below the chat box depending
+  on whether the box is near the top or bottom of the screen.
+- The voice menu is now green.
+- The IRC URL launching no longer changes the URL to upper case when
+  starting the browser.
+- An "Out of Memory" dialog box will appear and TRIBES will exit more
+  gracefully should this error occur.
+- Issues with the Net Lag icon not appearing while lagging have been
+  corrected.
+- Actions bound to Ctrl, Shift or Alt no longer conflict with normal keys.
+- A client side resource purge bug was fixed. Resources were not always
+  purged correctly between missions which would cause them to accumulate
+  unnecessarily.
+- In the commander map, you can now select players from the player
+  list as the target of a command.
+- Weapon cycling should now work correctly.
+- Flier interpolation has been improved.
+- Fliers no longer appear to be skipping over the ground on the clients,
+  while in actuality, on the server and to the pilot, they are cruising
+  normally.
+- Support for multiple redundant master servers.
+- Master address DNS lookups are now run on a background thread. They
+  no longer timeout after 5 seconds and don't block the main thread.
+  Some clients would fail to resolve the master address because of the
+  short timeout.
+- The initial "connection to the internet" warning has been removed as
+  it was mainly added because of the long pause the clients would
+  experience while trying to resolve DNS addresses if not connected.
+  The pause issues was resolved.
+- Some USB devices were causing problems with our DirectInput
+  initialization, which could cause the game to crash at startup.
+  These issues have been cleared up.
+- Some fixes to our Aureal3D support. Fixes problems with weird
+  sounding 3D effects when using an Aureal3D card. Aureal3D is now
+  selectable from the Options/Sound page if you have an Aureal3D card.
+- Command line options were added:
+	+record
+	+password password
+	-host missionname
+	+maxplayers playerCount
+- Bringing up the score/server menu or switching to commander view
+  no longer stops your player from moving.
+- When looking directly at friendly equipment, you now get the
+  description, map icon and health of that equipment displayed on the
+  hud, similar to info on players. This does not occur for enemy
+  equipment.
+- IPX protocol now enabled by default.
+- A new control page was added to help bind keys to new functions:
+  + Shortcut keys to buy your favorites.
+  + You can now bind vote yes and vote no.
+  + Escort will set an "escort" waypoint to the last player who sent
+    you a chat message.
+- PostAction now correctly deals with 0 action values (no longer have
+  to post -0).
+- Fixed problems with cursor which occured when launching the game
+  with +connect now
+- You can now filter based on whether the server is dedicated or is
+  marked as a favorite.
+- Objects are no longer black when sitting on buildings in non-mission
+  lit missions.  They default to normal sun lighting.
+- Objective messages (flag taken, etc.) now show up in red.
+
+Modified Missions
+
+Map Markers were added to all missions that currently did not have them
+(except for DM missions.) The following missions were modified either to
+correct minor problems or improve their play balance:
+
+- Broadside - Moved random spawn points away from the flag and the lower
+  base entrance.  Added spawn points outside the base and on the hill 
+  between the bases to make it harder to defend.  Should also make it
+  easier to get out with the flag once you are inside the enemy base.
+- DangerousCrossing - Moved base buildings into team group to allow the
+  team textures to show up on each base.  Also repositioned radar dishes
+  for better coverage.  Expanded mission area to allow more room behind
+  each base.
+- SeekAndDestroy - Repositioned Elf turrets on back balcony as well as
+  removing the indoor turret on the back balcony (was impossible to get
+  in that way.)  Changed scoring to allow a win without having to have
+  control of any of the towers.  Also moved the tower switches out of the
+  way to allow easier jetting up into the towers.  Added Map markers as well
+  as consistent static item names.
+- AntHill - Fixed spawn points where player heads would be inside the angled
+  walls.  Fixed the elevators to allow longer trigger times.  Also
+  repositioned a turret inside the diamondsword base (was floating in the
+  air.)
+- Citadels - Reduced vis distance and increased haze distance to reduce
+  lag.  You can no longer see the team bases from the middle tower.
+- BloodRunsCold - Plugged hole in terrain next to base with a rock.
+- CrissCross - Moved tower shapes into correct tower groups (fixing
+  texturing problems with center tower association.)  Re-named static
+  shapes to correctly reflect the tower name that they belonged to.
+- DeathKnell - Increased flag score to 2 points per flag, total points
+  needed to win to 8 points (the tower is still worth 1 point.)
+
+Server Balance Changes
+
+- Team mates can now always destroy deployable equipment, even when
+  team damage is off.
+- If team damage is off, ramming team mates with a vehicle no longer
+  applies damage. Team mates will still take damage from exploding
+  friendly vehicles.
+- A player now receives 5 points for destroying an objective in Defend
+  and Destroy missions.
+- Descrepencies between the male and female armors were corrected.
+  + Light female can now carry 30 plasma charges
+  + Medium female can now carry 40 plasma charges
+  + Light female now takes the same amount of blaster damage
+- You can no longer turn the energy pack on/off. Energy pack is always on.
+- Blaster range reduced from 2000m to 400m, half-life down from
+  1900 TO 225m.
+- Blaster now does half damage against shields.
+- The spread on the chaingun is reduced by half.
+- Plasma damage was reduced by about half for medium and heavy armor.
+- ELF damage was increased from 0.04 per/sec to 0.06, ELF turrets
+  remain at 0.06.
+- The remote deployed turret vertical interference range was reduced
+  from 50m to 10m.
+- You now get points for kills made by turrets you deploy.
+- A timer was added to the all inventory and ammo stations so that a
+  player can no longer stand at one and constantly be re-supplied
+  and healed.
+- Inventory and ammo stations now automatically supply players with 
+  healing kits and grenades.
+- Ammo stations now heal players re-supply them with healing kits,
+  and grenades.
+
+Server Misc. Changes
+
+- Vote tabulation changes. Abstentions are now counted as no votes
+  until the quorum is reach.  All other abstentions are ignored.
+  Example: In a game of 20 players, the quorum is 10 players (%50).
+  If 6 players vote yes and all else abstain, then 4 abstentions
+  will be counted as no votes.  The vote is 6 to 4.  The default
+  margin is %55, so the vote passes.
+- If a vote to kick a player fails to pass, the vote is re-tabulated
+  counting only members of that player's team.  The count is all yes
+  votes against the total number of players on that team. The default
+  margin for all votes is %55, so on a 10 player team, it would
+  take 6 players to kick another team mate.
+- Kicking now bans a player for 5 minutes (was 1 minute)
+- Default vote margin reduced from %70 to %55.
+- Team damage now defaults to off in FFA mode, and defaults to on in
+  Tournament mode.
+- Options were added to the admin menu to select the duration
+  of the mission and to reset the server to it's initial settings.
+- An option was added to the Admin menu to Ban a player. This kicks
+  the player and bans him for 20 minutes.
+- Bans and kicks now echo the IP addresses to the console.
+- When a server's player count drops to 0, the server is reset
+  to it's initial settings.
+- New missionList.cs file was added to supply functions to manipulate
+  the servers' mission list.
+- Being in control of a Commander Station during mission change no
+  longer gives you free turret access in the subsequent missions.
+- Mod support changes: Modname.vol files are now loaded automatically,
+  and Modname.cs files are now automatically executed.
+- Dedicated servers and clients now echo a message to the console
+  when startup initialization is done.
+- Transport Addresses now default to IP, so IP addresses no longer need
+  the IP: prefix.
+- Control panels no longer reappear after being destroyed.
+- Telnet ports are now properly closed on loss of connection.
+- The server now includes client message flood protection. This keeps
+  player from sending too many messages in a row.  Playes who flood
+  messages are muted for 10 sec.
+- Triggers are now correctly activated by vehicles.
+- Bug fixed in isSelectableWeapon (thanks Savage).
+- Elevator trigger time was increased from 0.5 to 2.0 secs.
+- Servers now respond to a new "public" server info query.
+- A number of issues (bugs) with running AI's in multiplayer games
+  have been resolved.
+- A favorite item key was added to allow mods to have different
+  favorite sets.
+- Type zero MessageAll messages are white (as before), type one's are
+  now red.
+ 
+
+Version 1.1  12.30.98
+---------------------
+
+This first release is mainly geared towards addressing joystick support.
+This release contains two files, tribes.exe, and an example file
+joystick.cs. Tribes.exe contains the following changes:
+
+- New actions were added to allow joystick binding.
+- A small problem with player client side ground contact was corrected.
+  This problem would cause players to sometimes appear to be skating
+  over the ground.
+- Player transition interpolation. Animations normally switch
+  instantaneously from one to another. A preference variable,
+  $pref::animateWithTransitions, was added that, if set to true,
+  causes the game to interpolate between transitions. This results
+  in smoother looking player animation.
+
+
+Version 1.0  12.17.98
+---------------------
+
+Initial Version of the Starsiege TRIBES.
+
+      

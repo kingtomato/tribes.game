@@ -3,10 +3,11 @@ ProductID=83667
 FullTitle=Starsiege Tribes
 ShortTitle=Tribes
 Version=1.8.0.0
-PatchVersion=1.8.0.0
+PatchVersion=1.1.1.6
 StrippedDemo=0
 UpdateAfter=01-01-2000
 WebPage=http://www.tribesplayers.com/tribesplayers/
+PatchDate=02/25/07
 
 [Systest]
 ScreenWidth=640
