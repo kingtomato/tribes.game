@@ -1,0 +1,1 @@
+Server connection logs and IP logs are stored in this directory

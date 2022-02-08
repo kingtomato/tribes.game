@@ -1,0 +1,99 @@
+/* 
+	See http://www.tantek.com/CSS/Examples/boxmodelhack.html for more information
+	on the voice-family hack
+*/
+
+
+body {width: 99%;
+font-family : tahoma, serif; font-size:12px; color : #000000; 
+margin: 0px 0px 0px 0px;
+background-color: #ffffff;
+}
+
+span.bold {font-weight:bold;}
+span.label {font-size: 12px;}
+span.value {font-size: 12px;font-weight: bold;}
+
+div.spacer {padding-top:20px;}
+div.wc3 {text-align : left;padding : 10px 1px 1px 10px;}
+
+div.menu {
+ margin: 4px;
+ padding: 3px;
+ width: inherit;
+ border: 1px dotted black;
+ background-color: black;
+ color: white;
+ font-weight:bold;
+}
+
+div.content {
+ margin: 4px;
+ padding: 1px;
+ width: inherit;
+ background-color: #ccd8ea;
+}
+
+div.body {
+ margin: 4px;
+ padding: 10px 1px 1px 10px;
+ width: inherit;
+}
+
+
+table {
+ border-collapse: separate;
+ border-spacing: 1px;
+ min-width: 500px;
+}
+
+table.time {
+ width: 500px;
+}
+
+table.stats {font-size: 10px;}
+
+th {
+ background-color: #000000;
+ font-size: 14px;
+ color: white;
+ font-weight: bold;
+ text-align: left;
+}
+
+tr.title {
+ color: black;
+ background-color: #abc0df;
+}
+
+tr.alt0 {
+ background-color: #f5f5f5;
+}
+
+tr.alt1 {
+ background-color: #dcdcdc;
+}
+
+tr.total {
+ background-color: #C2C5D6;
+}
+
+td {text-align:center;}
+td.n {text-align:right;}
+td.t {text-align:left;}
+td.c {text-align:center;}
+td.l {height: 1px; background-color:black}
+
+td.nhi {background-color:yellow; text-align:right;}
+td.thi {background-color:yellow; text-align:left;}
+td.chi {background-color:yellow; text-align:center;}
+
+
+a:link img, a:visited img {border-style : none}
+a:link, a:visited {	color:#293675;text-decoration:none; }
+a:hover { color:#000069; background:#F2F2F2; text-decoration:underline; }
+
+a.delete, a.delete:visited {color:#c60009}
+a.convert, a.convert:visited {color:#2080FF}
+a.convertmap, a.convertmap:visited {color:#039000}
+a.menu, a.menu:visited {color:white}

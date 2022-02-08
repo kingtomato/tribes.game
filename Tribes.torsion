@@ -1,0 +1,32 @@
+<TorsionProject>
+<Name>Tribes</Name>
+<WorkingDir/>
+<EntryScript>console.cs</EntryScript>
+<DebugHook>dbgSetParameters( #port#, "#password#", true );</DebugHook>
+<Mods/>
+<ScannerExts>cs</ScannerExts>
+<Configs>
+<Config>
+<Name>Release</Name>
+<Executable>Tribes-release.exe</Executable>
+<Arguments>-mod DrinkMod</Arguments>
+<HasExports>false</HasExports>
+<Precompile>false</Precompile>
+<InjectDebugger>false</InjectDebugger>
+<UseSetModPaths>false</UseSetModPaths>
+</Config>
+<Config>
+<Name>Debug</Name>
+<Executable>Tribes-debug.exe</Executable>
+<Arguments/>
+<HasExports>false</HasExports>
+<Precompile>false</Precompile>
+<InjectDebugger>false</InjectDebugger>
+<UseSetModPaths>false</UseSetModPaths>
+</Config>
+</Configs>
+<SearchURL/>
+<SearchProduct>Darkstar</SearchProduct>
+<SearchVersion>1.4</SearchVersion>
+<ExecModifiedScripts>false</ExecModifiedScripts>
+</TorsionProject>
