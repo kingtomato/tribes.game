@@ -1,0 +1,1263 @@
+//--- export object begin ---//
+instant SimGroup "MissionGroup" {
+	instant SimGroup "Volumes" {
+		instant SimVolume "InterfaceVol" {
+			fileName = "Interface.zip";
+		};
+		instant SimVolume "entities" {
+			fileName = "Entities.zip";
+		};
+		instant SimVolume "World" {
+			fileName = "mudWorld.zip";
+		};
+		instant SimVolume "WorldTerrain" {
+			fileName = "mudTerrain.zip";
+		};
+		instant SimVolume "mudDML" {
+			fileName = "mudDML.zip";
+		};
+		instant SimVolume "savanaDML" {
+			fileName = "savanaDML.zip";
+		};
+		instant SimVolume "human1DML" {
+			fileName = "human1DML.zip";
+		};
+		instant SimVolume "TedFile" {
+			fileName = "missions\\sulfurious.ted";
+		};
+		instant SimVolume "MissionLighting" {
+			fileName = "Sulfurious.zip";
+		};
+	};
+	instant SimGroup "World" {
+		instant SimPalette "Palette" {
+			fileName = "mud.day.ppl";
+		};
+		instant MissionCenterPos "MissionCenter" {
+			x = "-256";
+			y = "-262";
+			w = "512";
+			h = "524";
+		};
+	};
+	instant SimGroup "Landscape" {
+		instant Sky "Sky" {
+			dmlName = "mudsky_day.dml";
+			skyColor = "0 0 0";
+			hazeColor = "0 0 0";
+			featurePosition = "0";
+			size = "280";
+			textures[0] = "0";
+			textures[1] = "1";
+			textures[2] = "2";
+			textures[3] = "3";
+			textures[4] = "4";
+			textures[5] = "5";
+			textures[6] = "6";
+			textures[7] = "7";
+			textures[8] = "8";
+			textures[9] = "9";
+			textures[10] = "10";
+			textures[11] = "11";
+			textures[12] = "12";
+			textures[13] = "13";
+			textures[14] = "14";
+			textures[15] = "15";
+		};
+		instant Planet "sunLight" {
+			fileName = "";
+			azimuth = "220";
+			incidence = "60";
+			castShadows = "True";
+			useLensFlare = "True";
+			intensity = "0.399895 0.399895 0.399895";
+			ambient = "0.199996 0.199996 0.199996";
+			size = "220";
+			distance = "1200";
+		};
+		instant SimTerrain "Terrain" {
+			tedFileName = "Sulfurious.dtf";
+			visibleDistance = "400";
+			hazeDistance = "200";
+			hazeVerticalMin = "9.87364e-39";
+			hazeVerticalMax = "8.10154e-39";
+			perspectiveDistance = "100";
+			screenSize = "70";
+			contGravity = "0 0 -20";
+			contDrag = "0";
+			contHeight = "10000";
+			position = "-768 -768 0";
+			rotation = "0 0 0";
+			terrainType = "rolplains";
+		};
+	};
+	instant SimGroup "Lights";
+	instant SimGroup "Teams" {
+		instant TeamGroup "team0" {
+			instant SimGroup "DropPoints" {
+				instant SimGroup "start" {
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "26.7323 -192.307 52.0625";
+						rotation = "0 -0 0.0399756";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "43.3765 -192 52.0625";
+						rotation = "0 -0 -0.0400156";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "35.4246 -193.199 52.462";
+						rotation = "0 -0 -2.00406e-05";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "31.4382 -208.267 52.0625";
+						rotation = "0 -0 0.0199767";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "39.341 -208.181 52.0625";
+						rotation = "0 -0 -0.0400156";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "35.537 -208 52.0625";
+						rotation = "0 -0 0.0199767";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "43.8482 -202.806 52.0625";
+						rotation = "0 -0 -2.00406e-05";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "27.5466 -203.5 52.0625";
+						rotation = "0 -0 0.0399766";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "41.0411 -198.182 52.0625";
+						rotation = "0 -0 -0.0400156";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "29.3627 -198.25 52.0625";
+						rotation = "0 -0 0.0399766";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "86.1207 -205.526 46.4411";
+						rotation = "0 -0 0.0399766";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "90.3773 -210.091 49.7451";
+						rotation = "0 -0 -0.0800156";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "96.0039 -207.886 54";
+						rotation = "0 -0 -0.199985";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "93.6015 -202.375 50.4172";
+						rotation = "0 -0 0.0999766";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "102.65 -206.67 55.3706";
+						rotation = "0 -0 -0.0400168";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "98.6653 -200.757 51.218";
+						rotation = "0 -0 -0.0800167";
+					};
+				};
+				instant SimGroup "Random" {
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "43.3654 -192 52.0625";
+						rotation = "0 -0 -0.0400177";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "26.7481 -192.35 52.0625";
+						rotation = "0 -0 0.0399736";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "39.341 -208.181 52.0625";
+						rotation = "0 -0 -0.0400177";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "27.5467 -203.5 52.0625";
+						rotation = "0 -0 0.0399745";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "31.4527 -208.267 52.0625";
+						rotation = "0 -0 0.0199746";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "83.635 -214.948 46.1679";
+						rotation = "0 -0 0.0399745";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "43.8482 -202.806 52.0625";
+						rotation = "0 -0 -2.21027e-05";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-5.89644 -159.234 33.7588";
+						rotation = "0 -0 -0.139986";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "45.4779 -198.797 33.5625";
+						rotation = "0 -0 1.59946";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "25.3903 -198.875 33.5625";
+						rotation = "0 -0 -1.49946";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "27.2862 -198.451 44.5625";
+						rotation = "0 -0 0.0599766";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "43.419 -198.139 44.5625";
+						rotation = "0 -0 -0.0600156";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "83.6653 -162.68 46.0101";
+						rotation = "0 -0 0.739949";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "8.11834 -221.196 40.292";
+						rotation = "0 -0 0.0199767";
+					};
+				};
+			};
+			instant SimGroup "Roof 3" {
+				instant SimPath "Path1" {
+					isLooping = "False";
+					isCompressed = "False";
+					instant Marker "Marker1" {
+						dataBlock = "PathMarker";
+						name = "";
+						position = "43.3318 -187.753 50.4925";
+						rotation = "0 -0 -3.1288";
+					};
+					instant Marker "Marker1" {
+						dataBlock = "PathMarker";
+						name = "";
+						position = "43.288 -185.375 48.0681";
+						rotation = "0 -0 -3.1293";
+					};
+				};
+				instant Moveable "Doordiagonal1" {
+					dataBlock = "DoorDiagonal";
+					name = "Roof Shutter 3";
+					position = "43.288 -185.375 48.0681";
+					rotation = "0 0 -3.1293";
+					destroyable = "True";
+					deleteOnDestroy = "False";
+					closeTime = "1";
+					Status = "close";
+					center = "1";
+					fadeTime = "0";
+				};
+			};
+			instant Turret "ELFTurret1" {
+				dataBlock = "ELFTurret";
+				name = "ELF Turret 1";
+				position = "45.2597 -206.406 51.9002";
+				rotation = "0 -0 0.0499918";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				lastDamageTeam = "1";
+				lastDamageObject = "2049";
+				shieldStrength = "0.0299999";
+			};
+			instant Turret "ELFTurret1" {
+				dataBlock = "ELFTurret";
+				name = "ELF Turret 2";
+				position = "26.4244 -206.75 51.778";
+				rotation = "0 -0 -0.0200149";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				lastDamageTeam = "0";
+				lastDamageObject = "2049";
+				shieldStrength = "0.0299999";
+			};
+			instant InteriorShape "ampipecon1" {
+				fileName = "ampipecon.0.dis";
+				isContainer = "1";
+				position = "35.5502 -197.961 27.0625";
+				rotation = "0 -0 -3.12265";
+				lightParams = "0 ";
+				locked = "1";
+			};
+			instant StaticShape "Stand1" {
+				dataBlock = "FlagStand";
+				name = "";
+				position = "35.4863 -196.179 52.625";
+				rotation = "0 -0 1.57943";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+			};
+			instant SimGroup "Rear Forcefield" {
+				instant SimPath "Path1" {
+					isLooping = "False";
+					isCompressed = "False";
+					instant Marker "Marker1" {
+						dataBlock = "PathMarker";
+						name = "";
+						position = "35.7341 -207.265 37.5898";
+						rotation = "0 -0 0.0199945";
+					};
+					instant Marker "Marker1" {
+						dataBlock = "PathMarker";
+						name = "";
+						position = "35.7341 -207.265 32.5898";
+						rotation = "0 -0 0.0199945";
+					};
+				};
+				instant Moveable "DoorForceField1" {
+					dataBlock = "DoorForceField5x5";
+					name = "Rear Forcefield";
+					position = "35.7341 -207.265 32.5898";
+					rotation = "0 0 0.0199945";
+					destroyable = "True";
+					deleteOnDestroy = "False";
+					fadeTime = "0";
+					closeTime = "1";
+					Status = "close";
+					center = "1";
+				};
+			};
+			instant InteriorShape "logo31" {
+				fileName = "logo3.0.dis";
+				isContainer = "1";
+				position = "34.7606 -180.32 37.946";
+				rotation = "0 -0 -3.12265";
+				lightParams = "0 ";
+				locked = "0";
+			};
+			instant StaticShape "Generator1" {
+				dataBlock = "Generator";
+				name = "Generator 1";
+				position = "25.9299 -194.125 33.0635";
+				rotation = "0 -0 1.57942";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				lastDamageTeam = "0";
+				lastDamageObject = "2049";
+			};
+			instant StaticShape "Generator1" {
+				dataBlock = "Generator";
+				name = "Generator 2";
+				position = "44.9066 -193.801 33.039";
+				rotation = "0 -0 1.59942";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				lastDamageTeam = "0";
+				lastDamageObject = "2049";
+			};
+			instant StaticShape "InventoryStation1" {
+				dataBlock = "InventoryStation";
+				name = "Inventory station 1";
+				position = "35.5007 -194.261 33.3004";
+				rotation = "0 -0 0.0199751";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				lastDamageTeam = "0";
+				lastDamageObject = "2049";
+				lastPlayer = "8418";
+			};
+			instant StaticShape "InventoryStation1" {
+				dataBlock = "InventoryStation";
+				name = "Inventory station 2";
+				position = "35.7707 -206.887 44.7628";
+				rotation = "0 -0 -3.12264";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				lastPlayer = "8427";
+			};
+			instant InteriorShape "logo21" {
+				fileName = "logo2.0.dis";
+				isContainer = "1";
+				position = "36.005 -212.195 43.2888";
+				rotation = "0 -0 0.0199965";
+				lightParams = "0 ";
+			};
+			instant Item "RepairPack1" {
+				dataBlock = "RepairPack";
+				name = "";
+				position = "33.1544 -204.5 33.5625";
+				rotation = "0 -0 -0.399964";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				rotates = "True";
+				collideable = "False";
+				count = "1";
+			};
+			instant Item "RepairPack1" {
+				dataBlock = "RepairPack";
+				name = "";
+				position = "38.1888 -204.411 33.6889";
+				rotation = "0 -0 -0.319967";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				rotates = "True";
+				collideable = "False";
+				count = "1";
+			};
+			instant InteriorShape "COPscargo11" {
+				fileName = "COPScargo1.0.dis";
+				isContainer = "0";
+				position = "1.60643 -163.696 34.2666";
+				rotation = "0.24899 2.05565 -0.129238";
+				lightParams = "2 2.199999 1 2.199999 1 ";
+			};
+			instant InteriorShape "COPlcargo21" {
+				fileName = "COPLCargo2.0.dis";
+				isContainer = "1";
+				position = "6.92678 -163.75 33.2701";
+				rotation = "0 -0 1.35946";
+				lightParams = "8 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 ";
+			};
+			instant InteriorShape "COPlcargo11" {
+				fileName = "COPLCargo1.0.dis";
+				isContainer = "0";
+				position = "2.88762 -173.451 33.819";
+				rotation = "0 -0 -0.759941";
+				lightParams = "4 1.200000 1 1.200000 1 1.200000 1 1.200000 1 ";
+			};
+			instant SimGroup "roof 1" {
+				instant SimPath "Path1" {
+					isLooping = "False";
+					isCompressed = "False";
+					instant Marker "Marker1" {
+						dataBlock = "PathMarker";
+						name = "";
+						position = "27.3125 -188.029 50.5";
+						rotation = "0 -0 -3.12916";
+					};
+					instant Marker "Marker1" {
+						dataBlock = "PathMarker";
+						name = "";
+						position = "27.3003 -185.637 48.0688";
+						rotation = "0 -0 -3.12939";
+					};
+				};
+				instant Moveable "Doordiagonal1" {
+					dataBlock = "DoorDiagonal";
+					name = "Roof Shutter 1";
+					position = "27.3003 -185.637 48.0688";
+					rotation = "0 0 -3.12939";
+					destroyable = "True";
+					deleteOnDestroy = "False";
+					closeTime = "4.34398";
+					Status = "close";
+					center = "1";
+					fadeTime = "0";
+				};
+			};
+			instant SimGroup "Roof 2" {
+				instant SimPath "Path1" {
+					isLooping = "False";
+					isCompressed = "False";
+					instant Marker "Marker1" {
+						dataBlock = "PathMarker";
+						name = "";
+						position = "35.2291 -187.916 50.4942";
+						rotation = "0 -0 -3.12898";
+					};
+					instant Marker "Marker1" {
+						dataBlock = "PathMarker";
+						name = "";
+						position = "35.2893 -185.5 48.0683";
+						rotation = "0 -0 -3.12933";
+					};
+				};
+				instant Moveable "Doordiagonal1" {
+					dataBlock = "DoorDiagonal";
+					name = "Roof Shutter 2";
+					position = "35.2893 -185.5 48.0683";
+					rotation = "0 0 -3.12933";
+					destroyable = "True";
+					deleteOnDestroy = "False";
+					fadeTime = "0";
+					center = "1";
+					Status = "close";
+					closeTime = "4.34398";
+				};
+			};
+			instant Item "flag1" {
+				dataBlock = "flag";
+				name = "";
+				position = "35.4789 -196.252 52.6671";
+				rotation = "0 -0 -0";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				rotates = "False";
+				collideable = "False";
+				count = "1";
+				objectiveLine = "13";
+				scoreValue = "1";
+				originalPosition = "35.4788 -196.25 52.6645";
+				atHome = "true";
+				pickupSequence = "0";
+				carrier = "-1";
+				holdingTeam = "-1";
+				changeTeamCount = "0";
+				enemyCaps = "0";
+				caps0 = "0";
+				caps1 = "0";
+				caps2 = "0";
+				caps3 = "0";
+				caps4 = "0";
+				caps5 = "0";
+				caps6 = "0";
+				caps7 = "0";
+			};
+		};
+		instant TeamGroup "team1" {
+			instant SimGroup "DropPoints" {
+				instant SimGroup "start" {
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-61.4276 187.136 55.656";
+						rotation = "0 -0 -3.13945";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-53.3412 188.689 56.3081";
+						rotation = "0 -0 -3.09945";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-45.0599 187.182 55.656";
+						rotation = "0 -0 3.08267";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-47.4672 191.875 55.656";
+						rotation = "0 -0 3.05945";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-59.4129 192.125 55.656";
+						rotation = "0 -0 -3.13945";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-61.3819 197.908 55.656";
+						rotation = "0 -0 -3.11945";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-45.4262 198.039 55.656";
+						rotation = "0 -0 3.12267";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-53.6755 202.875 55.656";
+						rotation = "0 -0 3.12267";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-57.9939 202.875 55.656";
+						rotation = "0 -0 -3.09945";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-49.1611 202.925 55.6698";
+						rotation = "0 -0 3.08267";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "2.29707 207.75 48.0417";
+						rotation = "0 -0 2.73945";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-0.470405 211.125 47.8138";
+						rotation = "0 -0 2.63945";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-3.65172 214.941 47.6443";
+						rotation = "0 -0 2.61945";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "6.15641 218.625 50.5053";
+						rotation = "0 -0 2.75945";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "3.32241 221.875 50.428";
+						rotation = "0 -0 2.63945";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-0.0973801 225 51.0095";
+						rotation = "0 -0 2.63945";
+					};
+				};
+				instant SimGroup "Random" {
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-61.5151 187.103 55.656";
+						rotation = "0 -0 -3.13943";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-45.0565 187.174 55.656";
+						rotation = "0 -0 3.08265";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "3.32222 221.875 50.429";
+						rotation = "0 -0 2.63943";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-47.4672 191.875 55.656";
+						rotation = "0 -0 3.05943";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-61.3819 197.908 55.656";
+						rotation = "0 -0 -3.11943";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-0.470589 211.125 47.8138";
+						rotation = "0 -0 2.63943";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-45.4262 198.039 55.656";
+						rotation = "0 -0 3.12265";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-86.071 211.437 38.452";
+						rotation = "0 -0 2.87945";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-113.057 158.401 40.7263";
+						rotation = "0 -0 -3.04267";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-37.49 159.875 39.6589";
+						rotation = "0 -0 2.95945";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-43.6442 193.632 37.156";
+						rotation = "0 -0 1.57946";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-63.5 193.641 37.156";
+						rotation = "0 -0 -1.55946";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-61.5268 193.375 48.156";
+						rotation = "0 -0 3.05945";
+					};
+					instant Marker "Drop Point1" {
+						dataBlock = "DropPointMarker";
+						name = "";
+						position = "-45.5839 193.375 48.156";
+						rotation = "0 -0 -3.10267";
+					};
+				};
+			};
+			instant InteriorShape "ampipecon1" {
+				fileName = "ampipecon.1.dis";
+				isContainer = "1";
+				position = "-53.5085 193.375 30.656";
+				rotation = "0 0 0";
+				lightParams = "0 ";
+				locked = "1";
+			};
+			instant InteriorShape "logo31" {
+				fileName = "logo3.1.dis";
+				isContainer = "1";
+				position = "-53.442 175.274 41.6301";
+				rotation = "0 0 0";
+				lightParams = "0 ";
+			};
+			instant StaticShape "InventoryStation1" {
+				dataBlock = "InventoryStation";
+				name = "";
+				position = "-53.4391 202.125 48.375";
+				rotation = "0 0 0";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				lastDamageObject = "8273";
+				lastDamageTeam = "1";
+			};
+			instant Turret "ELFTurret1" {
+				dataBlock = "ELFTurret";
+				name = "ELF Turret 1";
+				position = "-63.0202 201.898 55.3414";
+				rotation = "0 -0 -3.10265";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				shieldStrength = "0.0299999";
+				lastDamageObject = "2049";
+				lastDamageTeam = "0";
+			};
+			instant Turret "ELFTurret1" {
+				dataBlock = "ELFTurret";
+				name = "ELF Turret 2";
+				position = "-44.0134 202.125 55.3891";
+				rotation = "0 -0 3.13942";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				lastDamageTeam = "-1";
+				lastDamageObject = "0";
+				shieldStrength = "0.0299999";
+			};
+			instant StaticShape "Generator1" {
+				dataBlock = "Generator";
+				name = "Generator 1";
+				position = "-43.9321 189.326 36.5972";
+				rotation = "0 -0 -1.59942";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				lastDamageObject = "2049";
+				lastDamageTeam = "0";
+			};
+			instant StaticShape "Generator1" {
+				dataBlock = "Generator";
+				name = "Generator 2";
+				position = "-62.9286 189.214 36.5972";
+				rotation = "0 -0 -1.55942";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				lastDamageObject = "2049";
+				lastDamageTeam = "0";
+			};
+			instant SimGroup "Backdoor Forcefield" {
+				instant SimPath "Path1" {
+					isLooping = "False";
+					isCompressed = "False";
+					instant Marker "Marker1" {
+						dataBlock = "PathMarker";
+						name = "";
+						position = "-53.7625 202.625 41.242";
+						rotation = "0 0 0";
+					};
+					instant Marker "Marker1" {
+						dataBlock = "PathMarker";
+						name = "";
+						position = "-53.7627 202.625 36.2422";
+						rotation = "0 0 0";
+					};
+				};
+				instant Moveable "DoorForceField1" {
+					dataBlock = "DoorForceField5x5";
+					name = "Forcefield";
+					position = "-53.7627 202.625 36.2422";
+					rotation = "0 0 0";
+					destroyable = "True";
+					deleteOnDestroy = "False";
+					center = "1";
+					Status = "close";
+					closeTime = "5.04798";
+					fadeTime = "5.078";
+				};
+			};
+			instant InteriorShape "logo21" {
+				fileName = "logo2.1.dis";
+				isContainer = "1";
+				position = "-53.3629 206.925 46.9029";
+				rotation = "0 -0 -3.13943";
+				lightParams = "0 ";
+			};
+			instant StaticShape "Stand1" {
+				dataBlock = "FlagStand";
+				name = "";
+				position = "-53.4014 191.25 56.156";
+				rotation = "0 0 0";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+			};
+			instant StaticShape "InventoryStation1" {
+				dataBlock = "InventoryStation";
+				name = "";
+				position = "-53.5442 189.637 36.9586";
+				rotation = "0 -0 -3.12268";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				lastPlayer = "8385";
+			};
+			instant Item "RepairPack1" {
+				dataBlock = "RepairPack";
+				name = "";
+				position = "-50.9647 199.672 37.156";
+				rotation = "0 0 0";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				rotates = "True";
+				collideable = "False";
+				count = "1";
+			};
+			instant Item "RepairPack1" {
+				dataBlock = "RepairPack";
+				name = "";
+				position = "-56.0022 199.875 37.156";
+				rotation = "0 0 0";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				rotates = "True";
+				collideable = "False";
+				count = "1";
+			};
+			instant InteriorShape "COPlcargo21" {
+				fileName = "COPLCargo2.1.dis";
+				isContainer = "1";
+				position = "-72.5858 154 32.9375";
+				rotation = "0 0 0";
+				lightParams = "8 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 ";
+			};
+			instant InteriorShape "COPlcargo21" {
+				fileName = "COPLCargo2.2.dis";
+				isContainer = "1";
+				position = "-84.7659 157.399 32.9113";
+				rotation = "0 -0 2.25945";
+				lightParams = "8 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 1.200000 1 ";
+			};
+			instant InteriorShape "COPscargo31" {
+				fileName = "COPScargo3.0.dis";
+				isContainer = "0";
+				position = "-76.4606 151.375 34.6263";
+				rotation = "0.310296 0.997339 -3.12572";
+				lightParams = "0 ";
+			};
+			instant SimGroup "roof 1" {
+				instant SimPath "Path1" {
+					isLooping = "False";
+					isCompressed = "False";
+					instant Marker "Marker1" {
+						dataBlock = "PathMarker";
+						name = "";
+						position = "-45.5 183.762 54.5";
+						rotation = "0 0 0";
+					};
+					instant Marker "Marker1" {
+						dataBlock = "PathMarker";
+						name = "";
+						position = "-45.5 180.875 51.653";
+						rotation = "0 0 0";
+					};
+				};
+				instant Moveable "Doordiagonal1" {
+					dataBlock = "DoorDiagonal";
+					name = "Roof Shutter 1";
+					position = "-45.5 180.875 51.653";
+					rotation = "0 0 0";
+					destroyable = "True";
+					deleteOnDestroy = "False";
+					closeTime = "4.40798";
+					Status = "close";
+					center = "1";
+					fadeTime = "0";
+				};
+			};
+			instant SimGroup "Roof 2" {
+				instant SimPath "Path1" {
+					isLooping = "False";
+					isCompressed = "False";
+					instant Marker "Marker1" {
+						dataBlock = "PathMarker";
+						name = "";
+						position = "-53.5 183.662 54.4931";
+						rotation = "0 0 0";
+					};
+					instant Marker "Marker1" {
+						dataBlock = "PathMarker";
+						name = "";
+						position = "-53.5 180.875 51.6522";
+						rotation = "0 0 0";
+					};
+				};
+				instant Moveable "Doordiagonal1" {
+					dataBlock = "DoorDiagonal";
+					name = "Roof Shutter 2";
+					position = "-53.5 180.875 51.6522";
+					rotation = "0 0 0";
+					destroyable = "True";
+					deleteOnDestroy = "False";
+					center = "1";
+					Status = "close";
+					closeTime = "4.40798";
+					fadeTime = "0";
+				};
+			};
+			instant SimGroup "Roof 3" {
+				instant SimPath "Path1" {
+					isLooping = "False";
+					isCompressed = "False";
+					instant Marker "Marker1" {
+						dataBlock = "PathMarker";
+						name = "";
+						position = "-61.5 183.662 54.4936";
+						rotation = "0 0 0";
+					};
+					instant Marker "Marker1" {
+						dataBlock = "PathMarker";
+						name = "";
+						position = "-61.5 180.875 51.6528";
+						rotation = "0 0 0";
+					};
+				};
+				instant Moveable "Doordiagonal1" {
+					dataBlock = "DoorDiagonal";
+					name = "Roof Shutter 3";
+					position = "-61.5 180.875 51.6528";
+					rotation = "0 0 0";
+					destroyable = "True";
+					deleteOnDestroy = "False";
+					fadeTime = "0";
+					closeTime = "4.40798";
+					Status = "close";
+					center = "1";
+				};
+			};
+			instant Item "flag1" {
+				dataBlock = "flag";
+				name = "";
+				position = "-53.4604 191.165 56.2295";
+				rotation = "0 -0 -0";
+				destroyable = "True";
+				deleteOnDestroy = "False";
+				rotates = "False";
+				collideable = "False";
+				count = "1";
+				objectiveLine = "14";
+				caps7 = "0";
+				caps6 = "0";
+				caps5 = "0";
+				caps4 = "0";
+				caps3 = "0";
+				caps2 = "0";
+				caps1 = "0";
+				caps0 = "0";
+				enemyCaps = "0";
+				changeTeamCount = "0";
+				holdingTeam = "-1";
+				carrier = "-1";
+				pickupSequence = "0";
+				atHome = "true";
+				originalPosition = "-53.4604 191.165 56.2237";
+				scoreValue = "1";
+			};
+		};
+	};
+	instant SimGroup "Vents" {
+		instant StaticShape "GrassVent1" {
+			dataBlock = "SteamOnGrass2";
+			name = "";
+			position = "-98.5293 237.75 45.4239";
+			rotation = "-0.0598576 0.0904026 -1.49323";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "MudVent1" {
+			dataBlock = "SteamOnMud2";
+			name = "";
+			position = "-16.25 -204.167 47.6348";
+			rotation = "0.123264 0.569068 1.20797";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "MudVent1" {
+			dataBlock = "SteamOnMud";
+			name = "";
+			position = "-33.6361 -147.565 31.4719";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "GrassVent1" {
+			dataBlock = "SteamOnGrass";
+			name = "";
+			position = "120.905 -182.714 47.9504";
+			rotation = "0.185301 -0.488639 -0.833594";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "MudVent1" {
+			dataBlock = "SteamOnMud";
+			name = "";
+			position = "9.91746 -117.571 38.6274";
+			rotation = "-0.238605 -0.189156 1.18476";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "MudVent1" {
+			dataBlock = "SteamOnMud2";
+			name = "";
+			position = "-101.926 135.544 37";
+			rotation = "-0.224578 -0.102933 -1.08392";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "MudVent1" {
+			dataBlock = "SteamOnMud";
+			name = "";
+			position = "-24.4152 143.375 46.9534";
+			rotation = "-0.0961465 -0.57516 -0.74662";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "GrassVent1" {
+			dataBlock = "SteamOnGrass2";
+			name = "";
+			position = "-104.064 71.1256 40.5931";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "MudVent1" {
+			dataBlock = "SteamOnMud";
+			name = "";
+			position = "3.64397 177.375 51.2972";
+			rotation = "0 -0.499943 -0.699941";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "GrassVent1" {
+			dataBlock = "SteamOnGrass2";
+			name = "";
+			position = "-104.75 -112.125 41.2262";
+			rotation = "0 -0 -1.01961";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "MudVent1" {
+			dataBlock = "SteamOnMud";
+			name = "";
+			position = "-159.2 34.8009 45.6057";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "GrassVent1" {
+			dataBlock = "SteamOnGrass2";
+			name = "";
+			position = "-271.768 65.0157 31.022";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "GrassVent1" {
+			dataBlock = "SteamOnGrass2";
+			name = "";
+			position = "-226.881 -140.268 44.9292";
+			rotation = "-0.477815 -0.0471725 2.44814";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "MudVent1" {
+			dataBlock = "SteamOnMud";
+			name = "";
+			position = "98.3697 63.5265 50.2389";
+			rotation = "0 -0.379964 1.07966";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "MudVent1" {
+			dataBlock = "SteamOnMud2";
+			name = "";
+			position = "-151.054 -183.891 39.4777";
+			rotation = "0.256806 -0.192983 -2.17464";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "GrassVent1" {
+			dataBlock = "SteamOnGrass";
+			name = "";
+			position = "166.125 -94.9933 67.8786";
+			rotation = "0 -0 1.35966";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "GrassVent1" {
+			dataBlock = "SteamOnGrass2";
+			name = "";
+			position = "72.6509 157.216 61.0072";
+			rotation = "0 0 0";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "MudVent1" {
+			dataBlock = "SteamOnMud2";
+			name = "";
+			position = "-225.572 203.875 52.2723";
+			rotation = "-0.465533 -0.359398 -0.206064";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant StaticShape "GrassVent1" {
+			dataBlock = "SteamOnGrass2";
+			name = "";
+			position = "-183.964 -106.625 37.3374";
+			rotation = "0 -0 -1.17966";
+			destroyable = "True";
+			deleteOnDestroy = "False";
+		};
+		instant Marker "Map Marker1" {
+			dataBlock = "MapMarker";
+			name = " Children of the Phoenix Outpost";
+			position = "19.9164 -135.088 40.007";
+			rotation = "0 0 0";
+		};
+		instant Marker "Map Marker1" {
+			dataBlock = "MapMarker";
+			name = " Starwolf Outpost";
+			position = "-52.253 127.875 38.0765";
+			rotation = "0 0 0";
+		};
+	};
+	instant InteriorShape "expbridge1" {
+		fileName = "EXPBRIDGE.0.dis";
+		isContainer = "1";
+		position = "-29.9609 4.52938 35.9591";
+		rotation = "0 -0 0.239944";
+		lightParams = "0 ";
+		locked = "1";
+	};
+	instant SimGroup "Observerdroppoints" {
+		instant Marker "Drop Point1" {
+			dataBlock = "DropPointMarker";
+			name = "";
+			position = "-106.278 113.693 51.9407";
+			rotation = "-0.199963 -0 -0.959952";
+		};
+		instant Marker "Drop Point1" {
+			dataBlock = "DropPointMarker";
+			name = "";
+			position = "61.7236 -116.899 62.6066";
+			rotation = "-0.199963 -0 2.41963";
+		};
+		instant Marker "Drop Point1" {
+			dataBlock = "DropPointMarker";
+			name = "";
+			position = "46.7128 -200.445 39.0215";
+			rotation = "-0.19996 -0 1.1196";
+		};
+		instant Marker "Drop Point1" {
+			dataBlock = "DropPointMarker";
+			name = "";
+			position = "-42.2308 196.641 42.9437";
+			rotation = "-0.199964 -0 2.17962";
+		};
+		instant Marker "Drop Point1" {
+			dataBlock = "DropPointMarker";
+			name = "";
+			position = "-69.7389 216.671 68.3247";
+			rotation = "-0.299964 -0 -2.76281";
+		};
+		instant Marker "Drop Point1" {
+			dataBlock = "DropPointMarker";
+			name = "";
+			position = "26.0763 -224.458 62.7994";
+			rotation = "-0.399963 -0 -0.299965";
+		};
+		instant Marker "Drop Point1" {
+			dataBlock = "DropPointMarker";
+			name = "";
+			position = "-9.78862 -5.21481 48.8035";
+			rotation = "-0.0299964 -0 0.739962";
+		};
+	};
+};
+//--- export object end ---//
+$teamScoreLimit = 10;
+$Game::missionType = "Open Call";
+exec("server/game/ctf");
+$cdTrack = 2;
+$cdPlayMode = 1;

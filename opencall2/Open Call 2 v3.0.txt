@@ -1,0 +1,23 @@
+Open Call2 version 3.0
+
+This is the updated version of the Open Call 2 map pack.  There may be other versions, depending on the reception of the maps included within.  You will need DOX's map pack for the maps to work correctly.  
+
+Much Thanks go out to the people involved in the long process of making this pack.  The_Pope, xpdnc, True, Eric_Paulson, Madbomber...all the idlers in #opencall who kept nagging me to work on the stuff. 
+
+Custom objects included were made by DOX and myself...
+
+Hope you all enjoy the majority of the maps...  :)
+
+Thanks for Downloading it, 
+
+DipStick.     
+
+
+
+INSTALLATION:
+
+To install, simply unzip into your TRIBES directory.  
+
+I cannot stress this enough.  Your TRIBES directory.  If you unzip into your Tribes/base folder, it will not work.  If you unzip into your tribes/base/missions folder, it will not work.  Your TRIBES folder.  If you do not follow this simple direction, dont ask me why it doesnt work.  Thanks.  
+
+Enjoy.  
